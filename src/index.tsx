@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 // basename = 'react-homework-template';
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="react-homework-template">
       <App />
     </BrowserRouter>
   </React.StrictMode>

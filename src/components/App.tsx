@@ -11,16 +11,16 @@ import { TodoItemPage } from 'pages/TodoItemPage';
 export const App: FC = () => {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="" element={<Layout />}>
         <Route index element={<p>Home</p>} />
-        <Route path="events" element={<EventsExamplePage />} />
-        <Route path="card" element={<CardPage />} />
+        <Route path="/events" element={<EventsExamplePage />} />
+        <Route path="/card" element={<CardPage />} />
 
-        <Route path="todos" element={<TodosPage />} />
-        <Route path="todos/:todosId" element={<TodoItemPage />} />
+        <Route path="/todos" element={<TodosPage />} />
+        <Route path="/todos/:todosId" element={<TodoItemPage />} />
 
-        <Route path="users" element={<UsersPage />} />
-        <Route path="users/:usersId" element={<UsersItemPage />} />
+        <Route path="/users" element={<UsersPage />} />
+        <Route path="/users/:usersId" element={<UsersItemPage />} />
       </Route>
     </Routes>
   );
